@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--注册bean-->
+    <bean id="userService" class="com.zww.zengw.service.serviceimpl.UserServiceImpl"/>
+    <bean id="log" class="com.zww.zengw.log.Log"/>
+    <bean id="afterLog" class="com.zww.zengw.log.AfterLog"/>
+    <bean id="diy" class="com.zww.zengw.diy.DiyPointCut"/>
+    <!--方式三 注解方式配置-->
+    <bean id="annotationPointCut" class="com.zww.zengw.diy.AnnotationPointCut"/>
+    <!--开启注解支持-->
+    <aop:aspectj-autoproxy/>
+
+    <!--配置aop 需要导入aop约束-->
+    <!--&lt;!&ndash;方式一&ndash;&gt;
+    <aop:config>
+        &lt;!&ndash;指定切入点 第一个参数：* 代表返回值 第二个参数： 代表所在的类 第三个参数：*(..)代表类中的方法和餐数据 &ndash;&gt;
+        <aop:pointcut id="pointcut" expression="execution(* com.zww.zengw.service.serviceimpl.UserServiceImpl.*(..))"/>
+        &lt;!&ndash;执行环绕增加&ndash;&gt;
+        <aop:advisor advice-ref="log" pointcut-ref="pointcut"/>
+        <aop:advisor advice-ref="afterLog" pointcut-ref="pointcut"/>
+    </aop:config>-->
+
+   <!-- &lt;!&ndash;方式二&ndash;&gt;
+    <aop:config>
+        &lt;!&ndash;指定切入面&ndash;&gt;
+        <aop:aspect ref="diy">
+            &lt;!&ndash;指定切入点&ndash;&gt;
+            <aop:pointcut id="pointcut" expression="execution(* com.zww.zengw.service.serviceimpl.UserServiceImpl.*(..))"/>
+            &lt;!&ndash;指定切入面中方法的执行位置&ndash;&gt;
+            <aop:before method="before" pointcut-ref="pointcut"/>
+            <aop:after method="after" pointcut-ref="pointcut"/>
+        </aop:aspect>
+    </aop:config>-->
+</beans>
+
