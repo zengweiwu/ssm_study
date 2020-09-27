@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--mybatis核心配置文件-->
+<configuration>
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <!--别名-->
+    <typeAliases>
+        <package name="com.zww.ssmbuild.pojo"/>
+    </typeAliases>
+
+    <mappers>
+        <!--注册映射器
+            注意资源路径以/分割 不能以点 不然找不到
+        -->
+    <mapper resource="com/zww/ssmbuild/dao/BooksMapper.xml"/>
+    </mappers>
+</configuration>
