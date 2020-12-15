@@ -140,12 +140,25 @@
         <counts>
           <entry key="java" value="184" />
           <entry key="jsp" value="112" />
+<<<<<<< Updated upstream
+=======
+          <entry key="txt" value="38" />
+>>>>>>> Stashed changes
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="184" />
           <entry key="JSP" value="112" />
+<<<<<<< Updated upstream
+=======
+          <entry key="PLAIN_TEXT" value="38" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.create.new" value="1" />
+>>>>>>> Stashed changes
         </counts>
       </usages-collector>
     </session>
@@ -211,8 +224,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/allBooks.jsp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="355">
               <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+=======
+            <state relative-caret-position="229">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -264,6 +282,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -448,7 +471,11 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< Updated upstream
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608024875306" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608025763437" />
+>>>>>>> Stashed changes
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -573,15 +600,40 @@
       <workItem from="1606732137858" duration="507000" />
       <workItem from="1607331647354" duration="1842000" />
       <workItem from="1607391590757" duration="4145000" />
+<<<<<<< Updated upstream
       <workItem from="1608020483922" duration="4102000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="45806000" />
+=======
+      <workItem from="1608020483922" duration="5115000" />
+    </task>
+    <task id="LOCAL-00001" summary="增加跳转京东链接">
+      <created>1608025047413</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608025047413</updated>
+    </task>
+    <task id="LOCAL-00002" summary="删除前端跳转京东代码">
+      <created>1608025709837</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608025709837</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="46819000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49291784" visible="true" weight="0.27010724" />
       <window_info id="Structure" order="1" sideWeight="0.50708216" side_tool="true" weight="0.25670242" />
@@ -624,6 +676,14 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+<<<<<<< Updated upstream
+=======
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加跳转京东链接" />
+    <MESSAGE value="删除前端跳转京东代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除前端跳转京东代码" />
+  </component>
+>>>>>>> Stashed changes
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -928,8 +988,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/allBooks.jsp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="355">
           <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+=======
+        <state relative-caret-position="229">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
