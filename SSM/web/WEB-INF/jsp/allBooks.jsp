@@ -62,18 +62,6 @@
             </tbody>
         </table>
     </div>
-
-    <%--跳转京东--%>
-    <div class="row">
-        <form action="${pageContext.request.contextPath}/interfaceOpen/tojingdong">
-            <div class="form-group">
-                <label for="openid">请输入openid</label>
-                <input name="openid" type="text" class="form-control" id="openid" placeholder="openid" required>
-            </div>
-            <button type="submit" class="btn btn-default">提交</button>
-        </form>
-    </div>
-
 </div>
 
 </body>
