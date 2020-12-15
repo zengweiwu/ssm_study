@@ -31,7 +31,6 @@
             <a class="btn btn-default" href="${pageContext.request.contextPath}/books/toaddBook" role="button">添加书籍</a>
         </div>
     </div>
-
     <%--展示书籍--%>
     <div class="row clearfix">
         <table class="table table-hover table-striped table-bordered">
@@ -45,21 +44,37 @@
             </tr>
             </thead>
             <tbody>
-                <c:forEach var="book" items="${books}">
-                    <tr>
-                        <td>${book.bookID}</td>
-                        <td>${book.bookName}</td>
-                        <td>${book.bookCounts}</td>
-                        <td>${book.detail}</td>
-                        <td>
-                            <a class="btn btn-default" href="${pageContext.request.contextPath}/books/toUpdate?bookId=${book.bookID}" role="button">修改</a>
-                            &nbsp; | &nbsp;<a class="btn btn-default" href="${pageContext.request.contextPath}/books/deleteBook?bookId=${book.bookID}" role="button">删除</a>
-                        </td>
-                    </tr>
-                </c:forEach>
+            <c:forEach var="book" items="${books}">
+                <tr>
+                    <td>${book.bookID}</td>
+                    <td>${book.bookName}</td>
+                    <td>${book.bookCounts}</td>
+                    <td>${book.detail}</td>
+                    <td>
+                        <a class="btn btn-default"
+                           href="${pageContext.request.contextPath}/books/toUpdate?bookId=${book.bookID}" role="button">修改</a>
+                        &nbsp; | &nbsp;<a class="btn btn-default"
+                                          href="${pageContext.request.contextPath}/books/deleteBook?bookId=${book.bookID}"
+                                          role="button">删除</a>
+                    </td>
+                </tr>
+            </c:forEach>
             </tbody>
         </table>
     </div>
+
+    <%--跳转京东--%>
+    <div class="row">
+        <form action="${pageContext.request.contextPath}/interfaceOpen/tojingdong">
+            <div class="form-group">
+                <label for="openid">请输入openid</label>
+                <input name="openid" type="text" class="form-control" id="openid" placeholder="openid" required>
+            </div>
+            <button type="submit" class="btn btn-default">提交</button>
+        </form>
+    </div>
+
 </div>
+
 </body>
 </html>
