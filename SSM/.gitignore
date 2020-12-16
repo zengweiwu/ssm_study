@@ -1,0 +1,16 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+.gitignore
+.idea/vcs.xml
+out/artifacts/SSM_war_exploded/WEB-INF/classes/com/zww/ssmbuild/controller/InterfaceOpen.class
+src/test/java/com/zww/ssmbuild/pojo/
+target/classes/com/zww/ssmbuild/controller/InterfaceOpen.class
+target/generated-sources/
+target/generated-test-sources/
