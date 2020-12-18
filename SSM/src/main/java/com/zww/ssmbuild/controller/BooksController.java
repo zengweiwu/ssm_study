@@ -65,8 +65,6 @@ public class BooksController {
     @RequestMapping("/updateBook")
     public String updateBook(Books book){
         booksService.update(book);
-        booksService.update(book);
-        booksService.update(book);
         return "redirect:/books/queryAll";
     }
 
@@ -76,6 +74,7 @@ public class BooksController {
         booksService.deleteById(bookId);
         booksService.deleteById(bookId);
         booksService.deleteById(bookId);
+        booksService.deleteById(bookIg);
         return "redirect:/books/queryAll";
     }
 }
