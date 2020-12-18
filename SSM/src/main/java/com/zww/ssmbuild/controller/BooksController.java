@@ -72,9 +72,6 @@ public class BooksController {
     @RequestMapping("/deleteBook")
     public String deleteBook(int bookId){
         booksService.deleteById(bookId);
-        booksService.deleteById(bookId);
-        booksService.deleteById(bookId);
-        booksService.deleteById(bookIg);
         return "redirect:/books/queryAll";
     }
 }
